@@ -1,0 +1,38 @@
+[
+  {
+    "name": "sketch-colorization",
+    "provenance": "User supplied this pair and explicitly selected it for repository samples.",
+    "settings": "Not provided; not inferred from filenames.",
+    "prompt": "Not published.",
+    "original": {
+      "image": "sketch-colorization-original.png",
+      "width": 399,
+      "height": 501,
+      "sha256": "1e1b9991d9039621639854ffdc378e7c3ad099955774905684cec9f883a4c946"
+    },
+    "edited": {
+      "image": "sketch-colorization-edited.png",
+      "width": 448,
+      "height": 576,
+      "sha256": "337053e9d35c1b32b856fd694bc068ebe8178210238e373befc79ffcb0486b38"
+    }
+  },
+  {
+    "name": "room-christmas-tree",
+    "provenance": "User supplied this pair and explicitly selected it for repository samples.",
+    "settings": "Not provided; not inferred from filenames.",
+    "prompt": "Not published.",
+    "original": {
+      "image": "room-christmas-tree-original.png",
+      "width": 5712,
+      "height": 4284,
+      "sha256": "90e74f3172fead30b856903e3259a02e4f1ba28aee81479adda28c0826911105"
+    },
+    "edited": {
+      "image": "room-christmas-tree-edited.png",
+      "width": 576,
+      "height": 448,
+      "sha256": "3249be5092bc17d34ba2d1cd51ca10ff296a1251f30a1079f6e3b57a733b21ad"
+    }
+  }
+]

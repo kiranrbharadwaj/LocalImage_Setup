@@ -8,7 +8,9 @@ This is a practical experiment with measured results, not a promise of ChatGPT-e
 
 ## Sample gallery
 
-[View the new synthetic before-and-after samples](docs/samples.md): backpack recolor, toy-car headlights, and a winter-scene attempt. Includes exact prompts, settings and observed failures; these are local model outputs, not polished retouches.
+[View user-supplied examples](docs/user-samples.md) of sketch colorization and adding a Christmas tree to a room. These four images were explicitly selected for inclusion; personal prompts and discussions are excluded.
+
+[View the synthetic before-and-after samples](docs/samples.md): backpack recolor, toy-car headlights, and a winter-scene attempt. Includes exact prompts, settings and observed failures; these are local model outputs, not polished retouches.
 
 ## What worked
 
@@ -43,7 +45,7 @@ cd LocalImage_Setup
 python3.14 scripts/setup.py
 ```
 
-The installer checks out a pinned ComfyUI revision inside `.runtime/ComfyUI`, creates a dedicated virtual environment, installs the dependency lock, and copies the workflows and synthetic examples. It does not install custom nodes, a cloud integration, or a system service.
+The installer checks out a pinned ComfyUI revision inside `.runtime/ComfyUI`, creates a dedicated virtual environment, installs the dependency lock, and copies the workflows and included example images. It does not install custom nodes, a cloud integration, or a system service.
 
 Download the base model, encoder, VAE and Consistency adapter:
 
@@ -125,7 +127,7 @@ The launcher restricts the server to localhost and wraps it in a process-level s
 
 These controls apply to the launched ComfyUI process; they are not an audit of every application on the Mac. Model downloads still contact GitHub, PyPI and Hugging Face during installation. See [Privacy and troubleshooting](docs/privacy-and-troubleshooting.md).
 
-Personal inputs, outputs, caches and models remain inside ignored `.runtime/`. **Do not commit your own reference photos, workflows containing sensitive prompts, outputs, logs, or model weights.** Included examples are synthetic. Nothing uploads a test image to GitHub or an inference provider.
+Personal inputs, outputs, caches and models remain inside ignored `.runtime/`. **Do not commit your own reference photos, workflows containing sensitive prompts, outputs, logs, or model weights.** The gallery separates synthetic examples from four user-supplied images explicitly selected for inclusion. Local inference does not upload images to GitHub or an inference provider; publishing selected samples is a separate, explicit action.
 
 ## Validate this repository
 
