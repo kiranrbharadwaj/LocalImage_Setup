@@ -16,4 +16,3 @@ print 'ComfyUI will open at http://127.0.0.1:8188. Stop with Control-C.'
 exec /usr/bin/sandbox-exec -f "$repo_dir/scripts/local-only.sb" .venv/bin/python main.py \
   --listen 127.0.0.1 --port 8188 --offline --disable-all-custom-nodes \
   --disable-metadata --reserve-vram 8 --bf16-text-enc --cache-none --fast-disk --preview-method none
-

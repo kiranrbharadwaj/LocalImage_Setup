@@ -43,4 +43,3 @@ Use one concrete instruction, compare base versus Consistency, and inspect non-t
 Source and dependencies: `.runtime/ComfyUI`; models: `.runtime/ComfyUI/models`; photos: `.runtime/ComfyUI/input`; results: `.runtime/ComfyUI/output`. These are Git-ignored but not encrypted by this project. Save private backups as appropriate.
 
 To remove the setup, stop the server, preserve any wanted input/output/reference files, then remove the dedicated `.runtime` directory and clone. Do not remove shared Python installations, shared caches or LM Studio model files. No background service or startup login item is installed.
-

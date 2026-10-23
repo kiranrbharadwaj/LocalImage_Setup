@@ -7,4 +7,3 @@ Downloaded model files are checked against pinned sizes and SHA-256 hashes. Hash
 The local server has no user authentication and must remain bound to localhost. Do not expose it through LAN binding, reverse proxies or tunnels. Local processes and browser extensions may still have access; shared or hostile machines require a separate security design.
 
 Dependencies and ComfyUI are pinned for reproducibility, not maintained automatically. Review security updates before refreshing the lock and rerun local checks. Do not run this setup on sensitive production systems.
-

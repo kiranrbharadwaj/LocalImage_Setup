@@ -33,4 +33,3 @@ Do not place personal workflows in this Git repository's tracked `workflows/` fo
 - **TheseAlpacas V2:** NSFW-labeled by its distributor, optional, not a required identity-preservation adapter.
 
 Only use adapters compatible with Qwen Image **2.1**. Earlier 2511 adapters and models are not interchangeable with this pipeline.
-

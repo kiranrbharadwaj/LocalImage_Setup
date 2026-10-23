@@ -149,4 +149,3 @@ That uses the synthetic teapot, monitors **new** swap-outs, and requests interru
 The author did not publish exact LoRA strengths, precision, seed or sampling settings. Our strengths—Anything2Real **0.7**, TheseAlpacas **0.8**, Consistency **1.0**—are experimental starting values, not an exact reproduction.
 
 Try it with synthetic or permissioned images, share reproducible findings, and open an issue or PR. Please include hardware, versions, image dimensions and sanitized settings; never include personal photos without permission. See [Contributing](CONTRIBUTING.md) and [Security](SECURITY.md).
-
