@@ -6,6 +6,10 @@ This is a practical experiment with measured results, not a promise of ChatGPT-e
 
 ![Synthetic teapot editing comparison](examples/teapot-comparison.png)
 
+## Sample gallery
+
+[View the new synthetic before-and-after samples](docs/samples.md): backpack recolor, toy-car headlights, and a winter-scene attempt. Includes exact prompts, settings and observed failures; these are local model outputs, not polished retouches.
+
 ## What worked
 
 We installed and tested this on an **Apple M5 Pro with 48 GiB unified memory, macOS 26.7.1**, using **ComfyUI 0.42.0, PyTorch 2.14.1 and Python 3.14.8**. The model runs through PyTorch's Apple MPS backend; this is not an LM Studio or MLX workflow.

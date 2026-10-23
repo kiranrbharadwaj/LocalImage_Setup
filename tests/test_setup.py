@@ -84,6 +84,29 @@ class PrivacyTests(unittest.TestCase):
         self.assertIn("(deny network*)", profile)
         self.assertIn('localhost:*', profile)
 
+class SampleTests(unittest.TestCase):
+    def test_sample_recipes_and_image_integrity(self):
+        samples = json.loads((ROOT / "examples/samples.json").read_text())
+        self.assertEqual(len(samples), 3)
+        for sample in samples:
+            for role in ("original", "edited"):
+                with self.subTest(sample=sample["name"], role=role):
+                    item = sample[role]
+                    file = ROOT / "examples" / item["image"]
+                    self.assertEqual(hashlib.sha256(file.read_bytes()).hexdigest(), item["sha256"])
+                    self.assertEqual(file.read_bytes()[:8], b"\x89PNG\r\n\x1a\n")
+                    recipe = json.loads((ROOT / "examples" / item["recipe"]).read_text())
+                    self.assertEqual(recipe["5"]["inputs"]["prompt"], item["prompt"])
+                    for node in recipe.values():
+                        for value in node["inputs"].values():
+                            if isinstance(value, list):
+                                self.assertIn(value[0], recipe)
+                    if role == "original":
+                        self.assertNotIn("images.image_1", recipe["5"]["inputs"])
+                    else:
+                        self.assertEqual(recipe["4"]["inputs"]["image"], sample["original"]["image"])
+                        self.assertTrue((ROOT / "examples" / recipe["4"]["inputs"]["image"]).is_file())
+
 
 if __name__ == "__main__":
     unittest.main()

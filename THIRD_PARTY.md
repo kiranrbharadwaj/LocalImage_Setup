@@ -13,4 +13,4 @@ The repository's MIT license applies to its original scripts, documentation and 
 
 Review the current upstream terms before downloading or using a model. This project was tested for personal evaluation and does not claim commercial permission for the stack. The pinned downloader is a convenience, not independent verification of every publisher's rights or training data.
 
-Examples are synthetic: the teapot originated in an earlier local FLUX.2 klein test; the cartoon portrait and edited outputs were generated locally with Qwen Image 2.1. They depict no identified real person. No user-provided personal images are included. Python dependency licenses remain those of their respective projects.
+Examples are synthetic: the teapot originated in an earlier local FLUX.2 klein test; the cartoon portrait and edited outputs were generated locally with Qwen Image 2.1. The additional backpack, cabin and toy-car source images and their edits were also generated locally with Qwen Image 2.1. They depict no identified real person. No user-provided personal images are included. Python dependency licenses remain those of their respective projects.
