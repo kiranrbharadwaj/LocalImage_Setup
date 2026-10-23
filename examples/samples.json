@@ -1,0 +1,102 @@
+[
+  {
+    "name": "backpack",
+    "synthetic": true,
+    "model": "Qwen Image 2.1 BF16",
+    "edit_adapter": "Consistency, strength 1.0",
+    "resolution": 512,
+    "steps": 25,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "original": {
+      "image": "backpack-original.png",
+      "sha256": "f15c5001a96177cc89224a524f516f7b149b038b276809b7a0738dcb834595bd",
+      "prompt": "A professional studio product photograph of one mustard yellow canvas backpack with a front zipper pocket and dark brown leather straps, centered on a pale gray seamless background, soft natural studio lighting, realistic canvas texture, three quarter front view, no text, no logos.",
+      "seed": 101,
+      "recipe": "recipes/backpack-original-api.json",
+      "elapsed_seconds": 46.4,
+      "additional_swap_mib": 309.6
+    },
+    "edited": {
+      "image": "backpack-edited.png",
+      "sha256": "e4448aeb7050bb7406f3a72df7ce1367b371fbb727f10871df73eef3ae97a2da",
+      "prompt": "Change only the yellow canvas fabric of the backpack to deep forest green. Preserve the brown leather straps, zippers, stitching, shape, camera angle, shadows and pale gray background unchanged.",
+      "seed": 101,
+      "recipe": "recipes/backpack-edited-api.json",
+      "elapsed_seconds": 56.4,
+      "additional_swap_mib": 0.0
+    }
+  },
+  {
+    "name": "cabin",
+    "synthetic": true,
+    "model": "Qwen Image 2.1 BF16",
+    "edit_adapter": "Base model, no LoRA",
+    "resolution": 512,
+    "steps": 25,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "original": {
+      "image": "cabin-original.png",
+      "sha256": "5ba04c10133dbf50764821274d4193dce54df228d6a7b04ae68b363ea06b488a",
+      "prompt": "A realistic landscape photograph of a small red wooden cabin beside a still lake in autumn, orange birch trees, a simple wooden dock, distant forested hills, soft overcast daylight, peaceful scene, no people, no text.",
+      "seed": 202,
+      "recipe": "recipes/cabin-original-api.json",
+      "elapsed_seconds": 46.4,
+      "additional_swap_mib": 0.0
+    },
+    "edited": {
+      "image": "cabin-edited.png",
+      "sha256": "aabe4d8b3062c6e2f2b9b4189cabac890fa844ff89980b71e981c356ad2aeba3",
+      "prompt": "Change the season from autumn to winter: cover the ground, dock and tree branches with fresh white snow. Preserve the red cabin, lake, composition, camera angle and distant hills. Keep the lake water visible.",
+      "seed": 202,
+      "recipe": "recipes/cabin-edited-api.json",
+      "elapsed_seconds": 54.8,
+      "additional_swap_mib": 0.0
+    },
+    "comparison_attempt": {
+      "image": "cabin-consistency-attempt.png",
+      "recipe": "recipes/cabin-consistency-attempt-api.json",
+      "adapter": "Consistency, strength 1.0",
+      "outcome": "Failed to add snow; altered colors and texture instead",
+      "metrics": {
+        "elapsed_seconds": 56.4,
+        "additional_swap_mib": 0.0
+      }
+    }
+  },
+  {
+    "name": "toy-car",
+    "synthetic": true,
+    "model": "Qwen Image 2.1 BF16",
+    "edit_adapter": "Consistency, strength 1.0",
+    "resolution": 512,
+    "steps": 25,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "original": {
+      "image": "toy-car-original.png",
+      "sha256": "a40eb0643e6d684679b139d2f5fdf61494c3359fc88cbcfee70c7aed468da194",
+      "prompt": "A realistic close-up studio photograph of a small silver toy sports car, three quarter front view, two narrow white illuminated LED light strips in the headlights, black wheels, on a dark gray tabletop, soft studio lighting, no logos, no text.",
+      "seed": 303,
+      "recipe": "recipes/toy-car-original-api.json",
+      "elapsed_seconds": 46.4,
+      "additional_swap_mib": 0.0
+    },
+    "edited": {
+      "image": "toy-car-edited.png",
+      "sha256": "1de7a523c922a7c518d5855c31ab14c9045bc956707e8033bd7aee860cbcdf29",
+      "prompt": "Change only the two illuminated white LED strips inside the front headlights to amber orange. Preserve the headlight shapes, silver paint, wheels, reflections, tabletop, camera angle and background unchanged.",
+      "seed": 303,
+      "recipe": "recipes/toy-car-edited-api.json",
+      "elapsed_seconds": 56.3,
+      "additional_swap_mib": 0.0
+    }
+  }
+]

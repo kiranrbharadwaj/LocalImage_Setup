@@ -1,0 +1,56 @@
+[
+  {
+    "path": "diffusion_models/qwen_image_2.1_bf16.safetensors",
+    "source_path": "diffusion_models/qwen_image_2.1_bf16.safetensors",
+    "repo": "Comfy-Org/Qwen-Image-2.1",
+    "revision": "0217efd1d9c9452e84f6448903d6e21bfa171ffd",
+    "size": 14230280616,
+    "sha256": "89f4158d066cc33906a199fca85634f766892dd78f49b6698dabf187ac86c4bc",
+    "group": "core"
+  },
+  {
+    "path": "text_encoders/qwen3vl_8b_bf16.safetensors",
+    "source_path": "text_encoders/qwen3vl_8b_bf16.safetensors",
+    "repo": "Comfy-Org/Qwen-Image-2.1",
+    "revision": "0217efd1d9c9452e84f6448903d6e21bfa171ffd",
+    "size": 17534334616,
+    "sha256": "68bdc82bc1b66851162ae656225e7e2068166b603db19bd5d5a3b90eb12669a9",
+    "group": "core"
+  },
+  {
+    "path": "vae/qwen_image_2.1_vae_bf16.safetensors",
+    "source_path": "vae/qwen_image_2.1_vae_bf16.safetensors",
+    "repo": "Comfy-Org/Qwen-Image-2.1",
+    "revision": "0217efd1d9c9452e84f6448903d6e21bfa171ffd",
+    "size": 675509688,
+    "sha256": "bb21f7473051e1ac368515dd3f2e15cd44d7a11748ee8823e1ddca3e4876b7c9",
+    "group": "core"
+  },
+  {
+    "path": "loras/Qwen2.1_Anything2RealCharacters.safetensors",
+    "source_path": "Qwen2.1_Anything2RealCharacters.safetensors",
+    "repo": "WarmBloodAban/Qwen-Image-2.1-LoRAs",
+    "revision": "c4ab5473bfdf585fc19cfd1e280f79d2b0c79947",
+    "size": 318820200,
+    "sha256": "5db4dd2376e6017812bf1189b2fc46e52aaa2c0b7e688faac75e83e1c4dce849",
+    "group": "character"
+  },
+  {
+    "path": "loras/NSFW Qwen by TheseAlpacas V2.safetensors",
+    "source_path": "NSFW Qwen by TheseAlpacas V2.safetensors",
+    "repo": "mpasila/Qwen-Image-2.1-LoRAs",
+    "revision": "401c3423daed3d678eb7bb6477eb695ba0a01f4d",
+    "size": 79744352,
+    "sha256": "83aba822ad8ee10a1e836828f5088259d93bce7b5f3419b46dbc0258c2be46a9",
+    "group": "character"
+  },
+  {
+    "path": "loras/qwen-image-2.1-consistency.safetensors",
+    "source_path": "qwen-image-2.1-consistency.safetensors",
+    "repo": "ausboss/Qwen-Image-2.1-Consistency-LoRA",
+    "revision": "1b58c4406925d6ec5fa9abd2d080531030f7cc0d",
+    "size": 159436496,
+    "sha256": "4f44ada1be2189cc23b3d010f9603543403f48454e2f76842a3d30109b20bd63",
+    "group": "core"
+  }
+]
